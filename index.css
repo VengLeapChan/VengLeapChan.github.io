@@ -47,9 +47,9 @@ h2.subheading {
   margin-top: 2vh;
 }
 span.typing{
-  background: linear-gradient(to right, blue, gray);
-  background-clip: text;
-  color: transparent;
+  background: -webkit-linear-gradient(to right, blue, gray);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 nav > ul {
   width: 80%;
