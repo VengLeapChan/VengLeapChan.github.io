@@ -11,12 +11,12 @@
         <li><a href="./project.html">About Me</a></li>
         <li><a href="./contact.html">Contact</a></li>
       </ul>
-      <img id = "mode" src="sun.png">
+      <img id = "mode" src="off.png">
     </nav>
 
     <div id="title">
       <h1 class="title">Veng Leap Chan</h1>
-      <h2 class="subheading">Portfolio Webpage</h2>
+      <h2 class="subheading"><span class ="typing">Business Analytst</span></h2>
       <br />
       <br />
       <p>This will serve as a Portfolio website for Veng Leap Chan.</p>
@@ -32,17 +32,25 @@
         contact page will send user a page with my contact information.
       </p>
     </div>
-
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script>
       var icon = document.getElementById("mode");
       icon.onclick = function() {
         document.body.classList.toggle("lightMode");
         if (document.body.classList.contains("lightMode")){
-          icon.src = "moon.png";
+          icon.src = "on.png";
         } else {
-          icon.src = "sun.png";
+          icon.src = "off.png";
         }
       }
+    </script>
+    <script>
+      var typed = new Typed(".typing", {
+        strings: ["Software Developer", "Business Analytst"],
+        typeSpeed: 100,
+        backSpeed: 100, 
+        loop: true
+      })
     </script>
   </body>
 </html>

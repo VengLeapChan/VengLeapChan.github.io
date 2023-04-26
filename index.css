@@ -25,6 +25,7 @@ nav {
   display: flex;
   align-items: center;
   background-color: var(--third);
+  background-blend-mode:darken;
 
 }
 
@@ -41,8 +42,14 @@ h1.title {
   font-size: 16vh;
 }
 h2.subheading {
-  font-size: 4vh;
+  color: blue;
+  font-size: 7vh;
   margin-top: 2vh;
+}
+span.typing{
+  background: linear-gradient(to right, blue, gray);
+  background-clip: text;
+  color: transparent;
 }
 nav > ul {
   width: 80%;
@@ -69,7 +76,7 @@ nav > img#mode {
   height: 10vh;
   font-size: 3vh;
   cursor: pointer;
-  background-color: var(--secondary);
+  background-color: var(--third);
 }
 
 nav ul li a {
