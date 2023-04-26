@@ -1,12 +1,48 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Veng Leap Chan's Portfolio</title>
-</head>
- 
-<body>
-  <h1>Veng Leap Chan</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+  <head>
+    <title>Veng Leap Chan</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./aboutMe.html">Projects</a></li>
+        <li><a href="./project.html">About Me</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <img id = "mode" src="sun.png">
+    </nav>
+
+    <div id="title">
+      <h1 class="title">Veng Leap Chan</h1>
+      <h2 class="subheading">Portfolio Webpage</h2>
+      <br />
+      <br />
+      <p>This will serve as a Portfolio website for Veng Leap Chan.</p>
+      <p>
+        There will be a projects page, an about me page, and a contact page.
+      </p>
+      <p>
+        <br />
+        Projects will show all previous projects.
+        <br />
+        About me will tell users a little bit about myself.
+        <br />
+        contact page will send user a page with my contact information.
+      </p>
+    </div>
+
+    <script>
+      var icon = document.getElementById("mode");
+      icon.onclick = function() {
+        document.body.classList.toggle("lightMode");
+        if (document.body.classList.contains("lightMode")){
+          icon.src = "moon.png";
+        } else {
+          icon.src = "sun.png";
+        }
+      }
+    </script>
+  </body>
 </html>
