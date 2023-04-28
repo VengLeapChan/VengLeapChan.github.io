@@ -4,13 +4,20 @@
   --third: gray;
 }
 
-* {
+html {
+  font-family: Raleway;
+
+}
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Raleway;
-  color:var(--secondary);
+}
+
+body{
   background-color: var(--primary);
+  color:var(--secondary);
 }
 
 .lightMode {
@@ -18,15 +25,6 @@
   --primary: #FFFFFF;
   --third: lightgray;
 }
-
-nav {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  background-color: var(--third);
-}
-
 div#title {
   width: 100%;
   height: 90vh;
@@ -50,32 +48,29 @@ span.typing{
   background-clip: text;
   -webkit-background-clip: text;
 }
-nav > ul {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  vertical-align: middle;
-  background-color: var(--third);
-}
 
-nav > ul >li {
-  list-style-type: none;
-  height: 100%;
-  font-size: 3vh;
+ul {
+  display: flex;
+  margin-top: 2rem;
   align-items: center;
-  display: flex;
-  background-color: var(--third);
+  justify-content: space-around;
+  background-color: transparent;
+  
+  
 }
 
-nav > img#mode {
-  margin: 0 auto;
-  border-radius: 100px;
-  width: 10vh;
-  height: 10vh;
+ul >li {
+  list-style-type: none;
+  font-size: 2.5vh;
+  background-color: transparent;
+}
+
+li > img#mode {
+  width: 5vh;
+  height: 5vh;
   font-size: 3vh;
   cursor: pointer;
-  background-color: var(--third);
+  color:var();
 }
 
 nav ul li a {
