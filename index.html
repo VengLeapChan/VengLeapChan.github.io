@@ -3,50 +3,73 @@
   <head>
     <title>Veng Leap Chan</title>
     <link rel="stylesheet" href="index.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
     <script src="./Scripts/lightMode.js" charset="utf-8" defer></script>
+    <script
+      src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"
+      
+    ></script>
   </head>
 
-  
-
   <body>
-    
     <nav>
       <ul>
         <li><a href="./aboutMe.html">Projects</a></li>
         <li><a href="./project.html">About Me</a></li>
         <li><a href="./contact.html">Contact</a></li>
-        <li><img id = "mode" src="on.png"></li>
+        <li><img id="mode" src="on.png" /></li>
       </ul>
     </nav>
 
-    <div id="title">
+    <section id="title" class="MainSection">
       <h1 class="title">Veng Leap Chan</h1>
-      <h2 class="subheading"><span class ="typing">Business Analytst</span></h2>
-      <br />
-      <br />
-      <p>This will serve as a Portfolio website for Veng Leap Chan.</p>
-      <p>
-        There will be a projects page, an about me page, and a contact page.
-      </p>
-      <p>
-        <br />
-        Projects will show all previous projects.
-        <br />
-        About me will tell users a little bit about myself.
-        <br />
-        contact page will send user a page with my contact information.
-      </p>
-    </div>
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+      <h2 class="subheading"><span class="typing">Business Analytst</span></h2>
 
+     <div class="SummaryNav">
+      <a href="#SummarySection">Next: Summary</a>
+     </div>
+    </section>
+
+    <div id="SummarySection" class="SummaryInfo">
+      <h1 class="subtitle">Summary</h1>
+      <div>
+        <p>This will serve as a Portfolio website for Veng Leap Chan.</p>
+        <p>
+          There will be a projects page, an about me page, and a contact page.
+        </p>
+        <p>
+          <br />
+          Projects will show all previous projects.
+          <br />
+          About me will tell users a little bit about myself.
+          <br />
+          contact page will send user a page with my contact information.
+        </p>
+        <p>This will serve as a Portfolio website for Veng Leap Chan.</p>
+        <p>
+          There will be a projects page, an about me page, and a contact page.
+        </p>
+        <p>
+          <br />
+          Projects will show all previous projects.
+          <br />
+          About me will tell users a little bit about myself.
+          <br />
+          contact page will send user a page with my contact information.
+        </p>
+        
+      </div>
+    </div>
     <script>
       var typed = new Typed(".typing", {
         strings: ["Software Developer", "Business Analytst"],
         typeSpeed: 100,
-        backSpeed: 100, 
-        loop: true
-      })
+        backSpeed: 100,
+        loop: true,
+      });
     </script>
   </body>
 </html>
